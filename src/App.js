@@ -6,6 +6,7 @@ import './App.css';
 // import Profile from './Profile';
 // import Wellcome from './Components/Wellcome';
 import Person from './Components/Person';
+import Count from './Components/CountComp';
 
 function App() {
 
@@ -49,8 +50,8 @@ function App() {
       <Person nombre="Triz Arias" edad="2 años" correo="triz@gmail.com" />
       <Person nombre="Edwin Arias" edad="34 años" correo="ea@gmail.com" />
 
-      
 
+      <Count />
 
     </div>
   );
