@@ -6,6 +6,8 @@ import './App.css';
 // import Profile from './Profile';
 // import Wellcome from './Components/Wellcome';
 import Person from './Components/Person';
+import Counter from './Components/Counter';
+import Effect from './Components/useEffect';
 
 function App() {
 
@@ -49,8 +51,9 @@ function App() {
       <Person nombre="Triz Arias" edad="2 años" correo="triz@gmail.com" />
       <Person nombre="Edwin Arias" edad="34 años" correo="ea@gmail.com" />
 
-      
 
+      <Counter />
+      <Effect />
 
     </div>
   );
