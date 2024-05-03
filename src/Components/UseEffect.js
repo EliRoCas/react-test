@@ -42,15 +42,21 @@ import React, { useState, useEffect } from "react";
 
 // Ejercicio 2
 
+// Se declara la función componente 
 function Effect() {
-    const [text, setText] = useState("");
+    const [text, setText] = useState(""); // Se inicializa la variable de estado y la función de actualización
 
-    // Se define la función componente para que mostre el texto 
+    // Se define la función que se utilizará como controlador del evento, para el evento "onChange"
+    // Al llamarla, se actualiza el estado de 'text' con el valor dado en el campo de entrada y se imprime el 
+    // valor del estado anterior (debido al asincronísmo del useState y setText)
     const showText = (e) => {
         setText(e.target.value) // Se utiliza la propiedad "target.value" para que capture los valores del evento
         console.log(text);
     }
 
+    // Se utiliza el useEffect sin dependencias, para que imprima los valores dados. 
+    // Al pasarle un array vacío como segundo argumento, el efecto sólo se ejecutará una vez después de que 
+    // el componente se monte. 
     useEffect(() => {
         console.log("montado");
         return () => {
@@ -60,7 +66,8 @@ function Effect() {
         []
     )
 
-
+    // Se utiliza el useEffecto con dependencia "text", es decir, el efecto se utilizará cada vez que 'text' cambie. 
+    // Por tanto, cada vez que se escriba en el campo de entrada y el estado "text" cambie, se imprimirá el mensaje.
     useEffect(() => {
         console.log("Texto modificado");
 
@@ -68,6 +75,8 @@ function Effect() {
         [text]
     )
 
+    // Se realiza el renderizado del componente, en este caso, el campo de entrada del texto y el párrafo que 
+    // mostrará el contenido del estado "text".
     return (
         <>
             <div>
