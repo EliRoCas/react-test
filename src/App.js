@@ -5,7 +5,9 @@ import './App.css';
 // import LogoutButton from './Components/LogoutButton';
 // import Profile from './Profile';
 // import Wellcome from './Components/Wellcome';
-import Person from './Components/Person';
+// import Person from './Components/Person';
+// import Counter from './Components/Counter';
+import Effect from './Components/UseEffect';
 
 function App() {
 
@@ -21,7 +23,7 @@ function App() {
       {/* Utilizando Bootstrap  */}
       {/* <h1>¡Hola, mundo!</h1>
       <button type='button' className='btn btn-success'><i className="fa-brands fa-android"></i></button>
-     
+
 
       // Utilizando componentes creados por el usuario
      <FooterComp /> */}
@@ -44,13 +46,15 @@ function App() {
       <h2>{res}</h2> */}
 
       {/* Utilizando props */}
-      <h2>Ejercicio 1 utilizando props</h2>
+      {/* <h2>Ejercicio 1 utilizando props</h2>
       <Person nombre="Dante Arias" edad="3 años" correo="dante@gmail.com" />
       <Person nombre="Triz Arias" edad="2 años" correo="triz@gmail.com" />
-      <Person nombre="Edwin Arias" edad="34 años" correo="ea@gmail.com" />
+      <Person nombre="Edwin Arias" edad="34 años" correo="ea@gmail.com" /> */}
 
-      
 
+      {/* <Counter /> */}
+
+      <Effect />
 
     </div>
   );
