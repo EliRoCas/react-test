@@ -7,7 +7,7 @@ import './App.css';
 // import Wellcome from './Components/Wellcome';
 // import Person from './Components/Person';
 // import Counter from './Components/Counter';
-import Effect from './Components/UseEffect';
+import Effect from './Components/UseEffectH';
 
 function App() {
 
